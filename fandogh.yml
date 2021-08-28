@@ -1,8 +1,8 @@
 kind: ExternalService
-name: template
+name: website
 spec:
   image_pull_policy: Always
   port: 80
   source:
-    context: .
+    context: Eduford
     project_type: static_website

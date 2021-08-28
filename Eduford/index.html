@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="styles/style.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
@@ -17,10 +20,11 @@
 </head>
 <body>
 <section class="header">
+
     <nav>
         <a href="index.html"><img src="img/logo.png" alt=""></a>
-        <div class="nav-links">
-            <i class="fas fa-times"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fas white fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="index.html">ABOUT</a></li>
@@ -29,7 +33,7 @@
                 <li><a href="index.html">CONTACT</a></li>
             </ul>
         </div>
-        <i class="fas fa-bars"></i>
+        <i class="fas white fa-bars" onclick="showMenu()"></i>
     </nav>
 
     <div class="text-box">
@@ -39,8 +43,150 @@
         </p>
         <a href="" class="hero-btn">Visit Us To Know More</a>
     </div>
+
 </section>
 
-<script src="https://kit.fontawesome.com/55c38f87bc.js" crossorigin="anonymous"></script>
+<section class="course">
+    <h1 class="title-lead">Courses We Offer</h1>
+    <p class="title-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto atque commodi delectus dicta ea
+                id impedit ipsa iusto maiores minima modi obcaecati omnis quasi quidem quisquam reprehenderit, sit
+                voluptates?</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto atque commodi delectus dicta ea
+                id impedit ipsa iusto maiores minima modi obcaecati omnis quasi quidem quisquam reprehenderit, sit
+                voluptates?</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto atque commodi delectus dicta ea
+                id impedit ipsa iusto maiores minima modi obcaecati omnis quasi quidem quisquam reprehenderit, sit
+                voluptates?</p>
+        </div>
+    </div>
+</section>
+
+<section class="campus">
+    <h1 class="title-lead">Our Global Campus</h1>
+    <p class="title-description">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="img/london.png" alt="">
+            <div class="layer">
+                <h3>London</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="img/newyork.png" alt="">
+            <div class="layer">
+                <h3>New York</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="img/washington.png" alt="">
+            <div class="layer">
+                <h3>Washington</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="facilities">
+    <h1 class="title-lead">Our Facilities</h1>
+    <p class="title-description">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="img/library.png" alt="">
+            <h3>World Class Library</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deserun elit. Culpa deseruntt</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/cafeteria.png" alt="">
+            <h3>Tasty and Healthy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deserun elit. Culpa deseruntt</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/basketball.png" alt="">
+            <h3>Playground</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deserun elit. Culpa deseruntt</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h1 class="title-lead">What Our Students Say</h1>
+    <p class="title-description">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="img/user1.jpg" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur debitis doloribus
+                    dolorum earum eligendi est eum eveniet, id illum ipsa iste, necessitatibus omnis quibusdam sint sunt
+                    tenetur ut vel.</p>
+                <h3>Christine Berkley</h3>
+                <i class="fas primary fa-star"></i>
+                <i class="fas primary fa-star"></i>
+                <i class="fas primary fa-star"></i>
+                <i class="far primary fa-star"></i>
+                <i class="far primary fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="img/user2.jpg" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur debitis doloribus
+                    dolorum earum eligendi est eum eveniet, id illum ipsa iste, necessitatibus omnis quibusdam sint sunt
+                    tenetur ut vel.</p>
+                <h3>David Baker</h3>
+                <i class="fas primary fa-star"></i>
+                <i class="fas primary fa-star"></i>
+                <i class="fas primary fa-star"></i>
+                <i class="fas primary fa-star"></i>
+                <i class="fas primary fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h1>Enroll for our various online courses <br> anywhere fromn the world</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<section class="footer">
+    <h4 class="title-lead">About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br>corporis excepturi id, minima nisi nostrum
+        officiis omnis quidem reiciendis.</p>
+
+    <div class="icons">
+        <i class="fab primary fa-facebook"></i>
+        <i class="fab primary fa-twitter"></i>
+        <i class="fab primary fa-instagram"></i>
+        <i class="fab primary fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="far primary fa-heart"></i> By Ehsan Rostami Pour</p>
+</section>
+
+<script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0px";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
 </body>
 </html>

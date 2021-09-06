@@ -4,5 +4,5 @@ spec:
   image_pull_policy: Always
   port: 80
   source:
-    context: Laprev
+    context: Eduford
     project_type: static_website
